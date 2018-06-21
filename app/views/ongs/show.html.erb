@@ -1,0 +1,9 @@
+<header><h1 class="display-4"><%= @ong.nome_instituicao %></h1></header>
+
+<p>E-mail: <%= @ong.email %></p>
+<p>CNPJ: <%= @ong.cpnj %></p>
+<p>Endereço: <%= @ong.endereco %></p>
+<p>Coordenadas: <%= @ong.latitude %> <%= @ong.longitude %></p>
+
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@ong.latitude},#{@ong.longitude}&markers=#{@ong.latitude},#{@ong.longitude}&zoom=7&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
+              class: 'img-fluid img-rounded', alt: "#{@ong.nome_instituicao} on the map"%>

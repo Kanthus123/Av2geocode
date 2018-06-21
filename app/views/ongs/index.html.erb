@@ -1,0 +1,11 @@
+<header><h1 class="display-4">ONGs</h1></header>
+
+<%= link_to 'Adicionar nova ONG', new_ong_path, class: 'btn btn-primary btn-lg' %>
+
+<div class="card">
+  <div class="card-block">
+    <ul>
+      <%= render @ongs %>
+    </ul>
+  </div>
+</div>

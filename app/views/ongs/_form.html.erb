@@ -1,0 +1,23 @@
+<%= form_for @ong do |f| %>
+  <fieldset class="form-group">
+    <%= f.label :nome_instituicao %>
+    <%= f.text_field :nome_instituicao, class: "form-control" %>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <%= f.label :email %>
+    <%= f.text_field :email, class: "form-control" %>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <%= f.label :cpnj %>
+    <%= f.text_field :cpnj, class: "form-control" %>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <%= f.label :endereco %>
+    <%= f.text_field :endereco, class: "form-control" %>
+  </fieldset>
+
+  <%= f.submit 'Adicionar Ong', class: 'btn btn-primary' %>
+<% end %>
